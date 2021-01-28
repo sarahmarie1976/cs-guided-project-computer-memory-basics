@@ -17,4 +17,23 @@ The input integer will not be negative.
 [output] integer
 
 """
-def csReverseIntegerBits(n):
+
+# Convert number into binary representation 
+# Represent string and reverse
+
+
+
+def csReverseIntegerBits(num, bitSize):
+
+    binary = bin(num)
+
+    reverse = binary[-1:1:-1]
+    reverse = reverse + (bitSize - len(reverse))*"0"
+
+    print (in(reverse,2))
+
+
+
+print(csReverseIntegerBits(417))
+print(csReverseIntegerBits(267))
+print(csReverseIntegerBits(0))
